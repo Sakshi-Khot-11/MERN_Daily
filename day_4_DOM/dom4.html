@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text changes as per input</title>
+</head>
+<body>
+    <h2>input changes</h2>
+    <input id="input" type="text" placeholder="type something here"/>
+
+    <p id="para">watch how text changes</p>
+    <script>
+
+        document.getElementById("input").addEventListener("input",()=>{
+            let innertext=document.getElementById("input").value;
+
+            document.getElementById("para").innerText=innertext;
+        });
+        
+    </script>
+    
+</body>
+</html>

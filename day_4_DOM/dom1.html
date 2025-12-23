@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing the content </title>
+</head>
+<body>
+    <!-- <h1>via onclick</h1>
+    <h1 id="text">Hello !!!</h1>
+    <button onclick="changeText()">Click Me !</button>
+    <script>
+        function changeText(){
+            document.getElementById("text").innerText="Welcome to my page";
+        }
+    </script> -->
+
+<h1>via addeventListener</h1>
+     <h1 id="text">Hello !!!</h1>
+    <button id="btn">Click Me !</button>
+    <script>
+        
+        document.addEventListener("click",()=>{
+document.getElementById("text").innerText="Welcome to my page";
+        })
+        
+    </script>
+    
+</body>
+</html>
