@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding new element</title>
+</head>
+<body>
+    <h1>hello !!! u want to add new text</h1>
+    <button id="addBtn">Add new Element</button>
+
+    <script>
+        let button=document.getElementById("addBtn")
+        button.addEventListener("click",()=>{
+            let p=document.createElement("p")
+        p.innerText="this is newly added para";
+        document.body.appendChild(p);
+
+        })
+        
+
+    </script>
+    
+</body>
+</html>
