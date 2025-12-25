@@ -6,6 +6,7 @@ import Profile from './pages/Profile'
 import Register from './pages/Register'
 import Login from './pages/Login'
 import { Route,Routes } from 'react-router'
+import {ToastContainer} from 'react-toastify'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path='/register' element={<Register/>}/>
 
     </Routes>
+    <ToastContainer/>
     {/* <Home/>
     <Profile/> */}
          </>
